@@ -1,0 +1,47 @@
+{
+  "family": {
+    "father": {
+      "name": "John Smith",
+      "age": 45,
+      "occupation": "Engineer",
+      "children": [
+        {
+          "name": "Alice Smith",
+          "age": 20,
+          "education": "University",
+          "hobbies": ["reading", "swimming"]
+        },
+        {
+          "name": "Bob Smith",
+          "age": 18,
+          "education": "High School",
+          "hobbies": ["gaming", "music"]
+        }
+      ]
+    },
+    "mother": {
+      "name": "Jane Smith",
+      "age": 42,
+      "occupation": "Doctor",
+      "specialization": "Cardiology"
+    }
+  },
+  "address": {
+    "street": "123 Main St",
+    "city": "Springfield",
+    "state": "IL",
+    "zipcode": "62701"
+  },
+  "pets": [
+    {
+      "name": "Buddy",
+      "type": "Dog",
+      "breed": "Golden Retriever"
+    },
+    {
+      "name": "Whiskers",
+      "type": "Cat",
+      "breed": "Persian"
+    }
+  ]
+}

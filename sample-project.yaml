@@ -1,0 +1,39 @@
+project:
+  name: "ConfMap Clone"
+  version: "1.0.0"
+  description: "A mind map visualization tool"
+  
+  technologies:
+    frontend:
+      - React
+      - Vite
+      - React Flow
+      - Axios
+    backend:
+      - Node.js
+      - Express
+      - Multer
+      - YAML parser
+  
+  features:
+    - name: "File Upload"
+      status: "completed"
+      description: "Upload JSON and YAML files"
+    - name: "Mind Map Visualization"
+      status: "completed"
+      description: "Display data as interactive nodes"
+    - name: "Search Functionality"
+      status: "completed"
+      description: "Search and highlight nodes"
+    - name: "Export Options"
+      status: "completed"
+      description: "Export mind maps"
+  
+  deployment:
+    frontend_port: 3000
+    backend_port: 5000
+    environment: "development"
+    
+  team:
+    developer: "GitHub Copilot"
+    project_type: "Full Stack Web Application"

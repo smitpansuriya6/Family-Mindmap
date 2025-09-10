@@ -1,0 +1,21 @@
+{
+  "family": {
+    "id": 1,
+    "name": "Grandfather",
+    "gender": "male",
+    "children": [
+      {
+        "id": 2,
+        "name": "Father",
+        "gender": "male",
+        "children": [
+          {
+            "id": 3,
+            "name": "Child",
+            "gender": "male"
+          }
+        ]
+      }
+    ]
+  }
+}
