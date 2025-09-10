@@ -1,6 +1,5 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import ReactFlow, {
-  MiniMap,
   Controls,
   Background,
   useNodesState,
@@ -38,7 +37,7 @@ function AppContent() {
   );
 
   const handleDataLoaded = (data, filename) => {
-    const layoutDirection = layout === 'horizontal' ? 'LR' : 'TB';
+    const layoutDirection = layout === 'horizontal' ? 'LR' : layout === 'vertical' ? 'TB' : 'radial';
     const layoutedElements = getLayoutedElements(data.nodes, data.edges, layoutDirection);
     
     setNodes(layoutedElements.nodes);
@@ -49,7 +48,7 @@ function AppContent() {
 
   useEffect(() => {
     if (originalData && originalData.nodes.length > 0 && originalData.edges.length > 0) {
-      const layoutDirection = layout === 'horizontal' ? 'LR' : 'TB';
+      const layoutDirection = layout === 'horizontal' ? 'LR' : layout === 'vertical' ? 'TB' : 'radial';
       const layoutedElements = getLayoutedElements(originalData.nodes, originalData.edges, layoutDirection);
       setNodes(layoutedElements.nodes);
       setEdges(layoutedElements.edges);
@@ -128,7 +127,6 @@ function AppContent() {
               className="react-flow"
             >
               <Controls />
-              <MiniMap />
               <Background variant="dots" gap={12} size={1} />
             </ReactFlow>
           </div>
