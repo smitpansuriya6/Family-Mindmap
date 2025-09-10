@@ -103,6 +103,12 @@
   box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
 }
 
+.fullscreen-btn.active {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
 .toolbar-divider {
   width: 1px;
   height: 24px;

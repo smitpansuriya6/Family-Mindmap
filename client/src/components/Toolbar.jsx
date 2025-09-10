@@ -1,8 +1,8 @@
 import React from 'react';
-import { Download, Layout, MoreHorizontal, Loader } from 'lucide-react';
+import { Download, Maximize, Minimize, MoreHorizontal, Loader } from 'lucide-react';
 import './Toolbar.css';
 
-const Toolbar = ({ layout, setLayout, onExport, fileName, isExporting }) => {
+const Toolbar = ({ layout, setLayout, onExport, fileName, isExporting, onToggleFullscreen, isFullscreen }) => {
   const layoutOptions = [
     { value: 'horizontal', label: 'Horizontal' },
     { value: 'vertical', label: 'Vertical' },
@@ -47,8 +47,12 @@ const Toolbar = ({ layout, setLayout, onExport, fileName, isExporting }) => {
 
       <div className="toolbar-divider"></div>
 
-      <button className="fullscreen-btn" title="Fullscreen">
-        <Layout size={16} />
+      <button 
+        className={`fullscreen-btn ${isFullscreen ? 'active' : ''}`}
+        onClick={onToggleFullscreen}
+        title={isFullscreen ? "Exit Fullscreen" : "Enter Fullscreen"}
+      >
+        {isFullscreen ? <Minimize size={16} /> : <Maximize size={16} />}
       </button>
     </div>
   );

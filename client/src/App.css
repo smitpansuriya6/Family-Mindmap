@@ -204,3 +204,37 @@
     gap: 0.25rem;
   }
 }
+
+/* Fullscreen styles */
+:fullscreen .app {
+  background: #f8f9fa;
+}
+
+:fullscreen .app-header {
+  padding: 0.5rem 1rem;
+}
+
+:fullscreen .app-title {
+  font-size: 1.8rem;
+}
+
+:fullscreen .status-bar {
+  padding: 0.25rem 1rem;
+}
+
+/* Webkit fullscreen support */
+:-webkit-full-screen .app {
+  background: #f8f9fa;
+}
+
+:-webkit-full-screen .app-header {
+  padding: 0.5rem 1rem;
+}
+
+:-webkit-full-screen .app-title {
+  font-size: 1.8rem;
+}
+
+:-webkit-full-screen .status-bar {
+  padding: 0.25rem 1rem;
+}
